@@ -8,15 +8,15 @@
 window.onload = function()
 {
     var emulator = new V86({
-        wasm_path: "../build/v86.wasm",
+        wasm_path: "v86/v86.wasm",
         memory_size: 512 * 1024 * 1024,
         vga_memory_size: 8 * 1024 * 1024,
         screen_container: document.getElementById("screen_container"),
         bios: {
-            url: "../bios/seabios.bin",
+            url: "seabios.bin",
         },
         vga_bios: {
-            url: "../bios/vgabios.bin",
+            url: "vgabios.bin",
         },
         filesystem: {
             baseurl: "../images/arch/",
